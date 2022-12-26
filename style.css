@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* body{
+body{
     height: 100vh;
-} */
+}
 html{
     scroll-behavior: smooth;
 }
@@ -216,3 +216,23 @@ footer i{
     border-radius: 40px;
     color: #DBA39A;
 }
+
+
+.carousel-inner img{
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 414px) and (max-width: 736px){
+    .productos{
+        background-image: none;
+        background-color: #F0DBDB;
+        width: 100%;
+    }
+    .gratis{
+        background-image: none;
+        background-color: #F0DBDB;
+    }
+}
+    
