@@ -218,7 +218,7 @@ footer i{
 }
 
 
-@media screen and (min-width: 375px) and (max-width: 1024px){
+@media screen and (min-width: 375px) and (max-width: 1000px){
     .productos .texto2{
         font-size: 18px;
     }
@@ -235,7 +235,7 @@ footer i{
         height: 100px;
     }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1000px){
     .productos img{
         height: 450px;
         background-position: center;
@@ -244,5 +244,9 @@ footer i{
     }
     .footer i{
         font-size: 30px;
+    }
+    .gratis iframe{
+        height: 400px;
+        width: 650px;
     }
 }
