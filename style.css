@@ -116,6 +116,8 @@ main{
     grid-template-rows: repeat(2, 200px);
     padding: 10px;
 }
+
+
 .item{
     height: 200px;
     width: 100%;
@@ -218,6 +220,16 @@ footer i{
 }
 
 
+/* le agregue esta animacion */
+.item{
+    filter: grayscale(100%);
+}
+.item:hover{
+    filter: grayscale(0%);
+    transition: all 2s;
+}
+
+/* tuve que ayudarme con esto para hacer responsive, la medida mobile es del iphone 12 pro y desktop a partir de 1000 x 600px */
 @media screen and (min-width: 375px) and (max-width: 1000px){
     .productos .texto2{
         font-size: 18px;
@@ -237,7 +249,7 @@ footer i{
 }
 @media screen and (min-width: 1000px){
     .productos img{
-        height: 450px;
+        height: 500px;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
