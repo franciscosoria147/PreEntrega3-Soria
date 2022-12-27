@@ -242,4 +242,7 @@ footer i{
         background-size: cover;
         background-attachment: fixed;
     }
+    .footer i{
+        font-size: 30px;
+    }
 }
