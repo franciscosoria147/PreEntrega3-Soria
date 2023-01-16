@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- link de google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="./style.css">
-    <title>Pasteleria</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pasteleria artesanal</title>
 </head>
 <body>
     
@@ -29,15 +31,17 @@
     <main>
         <div class="banner"></div>
 
-        <div class="nosotros">
-                <article class="texto1">
+        <div class="nosotros container-fluid">
+                <article class="texto1 col-lg-5 col-md-8 col-sm-12">
                     <h2>¿Quienes somos?</h2>
-                    <p>Somos una pasteleria artesanal que nació como un emprendimiento en el año 2019. Hoy en día, nuestra misión es llegar a todos los hogares de Tucumán a través de nuestros productos de excelente calidad, como así también, enseñar y formar nuevos pasteleros y pasteleras.</p>
+                    <strong>
+                        <p>Somos una pasteleria artesanal que nació como un emprendimiento en el año 2019. Hoy en día, nuestra misión es llegar a todos los hogares de Tucumán a través de nuestros productos de excelente calidad, como así también, enseñar y formar nuevos pasteleros y pasteleras.</p>
+                    </strong>
                 </article>
         </div>
 
-        <div class="productos">
-            <p class="texto2">Aquí podes ver algunas imágenes de los productos que tenemos para ofrecerte. Sin duda el Macaron es nuestra estrella, lo podes encontrar en distintos colores y sabores. Sin embargo las Tortas y Cookies no se quedan atrás, por lo general nuestros clientes nos mandan el diseño que quieren y nosotros nos encargamos del resto.</p>
+        <div class="productos container-fluid">
+            <p class="texto2 col-lg-12 col-md-12 col-sm-12">Aquí podes ver algunas imágenes de los productos que tenemos para ofrecerte. <strong>Sin dudas el Macaron es nuestra estrella, lo podes encontrar en distintos colores y sabores.</strong> Sin embargo las Tortas y Cookies no se quedan atrás, por lo general nuestros clientes nos envían el diseño que quieren y nosotros nos encargamos del resto.</p>
             <div class="galeria">
                 <div class="item item1"></div>
                 <div class="item item2"></div>
@@ -50,16 +54,16 @@
             </div>
         </div>
 
-        <div class="gratis">
-            <p class="texto3">¡Ahora podes ver nuestro primer video de Youtube!: es una clase gratuita en la que aprenderás a hacer la clásica Rosca de Pascua. Spoiler: próximamente nuevos videos...</p>
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ULuOBmtpXGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="gratis container-fluid">
+            <p class="texto3 col-12"><em><strong>¡Ahora podes ver nuestro primer video de Youtube!:</strong> es una clase gratuita en la que aprenderás a hacer la clásica Rosca de Pascua. Spoiler: próximamente nuevos videos...</em></p>
+            <div class="video col-12">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ULuOBmtpXGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
             </div>
         </div>
 
-        <div class="contacto">
+        <div class="contacto container-fluid">
             <h2>Completa el siguiente formulario y nosotros nos pondremos en contacto con vos:</h2>
-            <div class="formulario">
+            <div class="formulario col-lg-3 col-md-6 col-sm-12">
                 <label for="name">Nombre y apellido</label>
                 <input type="text" required>
                 <label for="number">Número de celular</label>
@@ -75,9 +79,9 @@
 
     </main>
 
-    <footer>
+    <footer class="container-fluid">
         <p>Visitá nuestras redes:</p>
-        <div class="redes">
+        <div class="redes col-12">
         <a href="https://www.instagram.com/patriciacostilla_"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.facebook.com/patriciacostillapasteleria"><i class="fa-brands fa-facebook"></i></a>
         <a href="https://api.whatsapp.com/send?phone=543816780202"><i class="fa-brands fa-whatsapp"></i></a>
