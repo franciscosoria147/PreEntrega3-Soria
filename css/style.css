@@ -5,7 +5,11 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .encabezado {
@@ -44,7 +48,6 @@ main {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
 }
 main .banner {
   background-image: url(../imagenes/m.spring.post.jpg);
@@ -83,7 +86,6 @@ main .productos {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: calc(100vh - 100px);
   width: 100%;
   padding: 40px;
 }
@@ -106,6 +108,11 @@ main .productos .galeria .item {
   border: 1px solid #F5EBE0;
   background-size: cover;
   background-position: center;
+  filter: grayscale(100%);
+}
+main .productos .galeria .item:hover {
+  filter: grayscale(0%);
+  transition: all 1s;
 }
 main .productos .galeria .item1 {
   background-image: url(../imagenes/m.marroc.post.jpg);
@@ -133,7 +140,6 @@ main .productos .galeria .item8 {
 }
 @media screen and (min-width: 375px) and (max-width: 600px) {
   main .productos .galeria {
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 250px);
@@ -141,7 +147,6 @@ main .productos .galeria .item8 {
 }
 @media screen and (min-width: 599px) and (max-width: 1000px) {
   main .productos .galeria {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 250px);
@@ -166,7 +171,7 @@ main .gratis .texto3 {
 }
 main .gratis .video {
   text-align: center;
-  padding: 20px;
+  padding: 0;
 }
 main .contacto {
   height: calc(100vh - 70px);
@@ -186,6 +191,28 @@ main .contacto .formulario {
   text-align: center;
 }
 
+footer {
+  height: 80px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #DBA39A;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: inset 0 0 3px #F5EBE0;
+}
+footer p {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+footer i {
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 15px;
+  margin-top: 0;
+}
+
 .subir {
   position: fixed;
   bottom: 100px;
@@ -193,6 +220,10 @@ main .contacto .formulario {
   font-size: 35px;
   border-radius: 40px;
   color: #DBA39A;
+}
+
+.subir:hover {
+  color: #F5EBE0;
 }
 
 /*# sourceMappingURL=style.css.map */
