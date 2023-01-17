@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .encabezado {
@@ -44,7 +44,7 @@ main {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 170px);
 }
 main .banner {
   background-image: url(../imagenes/m.spring.post.jpg);
@@ -186,6 +186,13 @@ main .contacto .formulario {
   text-align: center;
 }
 
+footer {
+  height: 70px;
+  width: 100%;
+  padding: 5px;
+  background-color: #DBA39A;
+}
+
 .subir {
   position: fixed;
   bottom: 100px;
@@ -193,6 +200,4 @@ main .contacto .formulario {
   font-size: 35px;
   border-radius: 40px;
   color: #DBA39A;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

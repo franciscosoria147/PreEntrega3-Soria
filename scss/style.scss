@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 @import "./variables.scss";
@@ -43,7 +43,7 @@ main {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: calc(100vh);
+    height: calc(100vh - 170px);
     .banner {
         background-image: url(../imagenes/m.spring.post.jpg);
         background-position: center;
@@ -171,8 +171,14 @@ main {
         .video {
             text-align: center;
             padding: 20px;
-        }
+            }
+            // @media screen and (min-width: 375px) and (max-width: 600px) {
+            //     display: grid;
+            //     grid-template-columns: 1fr;
+            //     grid-template-rows: repeat(1, 300px);
+            // }
     }
+    
     .contacto {
         height: calc(100vh - 70px);
         width: 100%;
@@ -195,18 +201,7 @@ footer {
     height: 70px;
     width: 100%;
     padding: 5px;
-    text-align: center;
-    color: $color4;
-    font-size: $f-small;
-    font-family: 'Times New Roman', Times, serif;
-    position: absolute;
-    bottom: 0;
-    top: 100vh;
-    i {
-        font-size: 30px;
-        color: $color1;
-        letter-spacing: 15px;
-    }
+    background-color: $color2;
 }
 .subir {
     position: fixed;
